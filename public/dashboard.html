@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card p {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Dashboard</h1>
+    <div id="dashboardContent">
+      <!-- Placeholder content -->
+      <div class="card">
+        <h2>Welcome, User!</h2>
+        <p>This is your dashboard. Enjoy!</p>
+      </div>
+      <div class="container">
+        <div class="card">
+          <h3>Widget 1</h3>
+          <p>This is the content of Widget 1.</p>
+        </div>
+    
+        <div class="card">
+          <h3>Widget 2</h3>
+          <p>This is the content of Widget 2.</p>
+        </div>
+    
+        <div class="card">
+          <h3>Widget 3</h3>
+          <p>This is the content of Widget 3.</p>
+        </div>
+      </div>
+    </div>
+    <div id="errorMessage" style="display: none;">
+      <p class="error-message">Unauthorized access. Please login again.</p>
+      <button id="loginButton">Return to Login</button>
+    </div>
+  </div>
+</body>
+</html>
