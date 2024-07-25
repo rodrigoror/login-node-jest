@@ -1,7 +1,12 @@
+## Requirements
+npm install express body-parser
+npm install --save-dev jest @cucumber/cucumber cucumber-jest supertest
+
 ## How to run
 in the terminal:
 ```
-node app.js
+npm start
+npm run cucumber
 ```
 
 ## RF-01: Validação do CPF
@@ -26,7 +31,7 @@ https://fullturists.atlassian.net/browse/KAN-7
     Given que o usuário está na página de login
     When o usuário insere um CPF com menos de 11 dígitos
     And o usuário clica no botão de login
-    Then o sistema deve exibir a mensagem "CPF inválido. O CPF deve conter 11 dígitos."
+    Then o sistema deve exibir a mensagem "CPF inválido."
 
   Scenario: CPF com caracteres não numéricos
     Given que o usuário está na página de login
