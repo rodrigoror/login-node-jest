@@ -7,14 +7,10 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 app.post('/login', (req, res) => {
-    console.log("hit the endpoint");
+    console.log("hit the endpoint login");
   // Perform login verification here based on the request body
   const { username, password } = req.body;
-  if (username === 'admin' && password === 'password') {
-    res.json({ success: true, token: "4ed54fff-cf79-4bdd-b9e0-ed5ec4d791d4"});
-  } else {
-    res.status(200).json({ success: false, message: 'Invalid username or password' });
-  }
+  res.status(200).json({ success: false, message: 'Invalid username or password' });
 });
 
 app.use(express.static(path.join(__dirname, 'public')));
