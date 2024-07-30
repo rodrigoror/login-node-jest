@@ -1,12 +1,17 @@
 ## Requirements
+```
 npm install express body-parser
 npm install --save-dev jest @cucumber/cucumber cucumber-jest supertest
+npm install cypress --save-dev
+npm install cypress-cucumber-preprocessor --save-dev
+```
 
 ## How to run
 in the terminal:
 ```
 npm start
 npm run cucumber
+npx cypress open
 ```
 
 ## RF-01: Validação do CPF
